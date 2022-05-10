@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KishoreFinance</title>
+</head>
+<style>
+    .button {
+      background-color: white;
+      border: 3px solid #ff3399;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .iframe {
+      border: 3px solid #73AD21;
+      background-color: black;
+    }
+    .left {
+      position: absolute;
+      right: 10px;
+      top: 80px;
+    }
+    .center {
+      text-align: center;
+    }
+    .logo {
+      width: 50px;
+      height:50px;
+    }
+
+</style>
+
+<style>
+.scroll-left {
+
+ height: 40px;
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: red;
+ border: 1px solid orange;
+
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 20s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(50%);
+ }
+ 100% {
+ transform: translateX(-50%);
+ }
+}
+</style>
+
+<script>
+    function charts(){
+        window.location.href = 'http://localhost:8080' + '/charts'
+    }
+    function algo(){
+        window.location.href = 'http://localhost:8080' + '/algotrade'
+    }
+</script>
+
+
+<body style="background-color: #bfff00;">
+<h1> <img class="logo" src="https://us.123rf.com/450wm/mamun25g/mamun25g2103/mamun25g210304173/166613221-kf-letter-logo-design-on-black-background-kf-creative-initials-letter-logo-concept-kf-letter-design-.jpg?ver=6"> KISHORE FINANCE</h1>
+<nav class="left">
+<a href="https://login.fyers.in/">FYERSWEB</a> |
+<a href="https://twitter.com/home">TWITTER</a> |
+<a href="https://web.telegram.org/z/#-1156134454">TELEGRAM</a> |
+<a href="https://www.google.com/finance/">GOOGLEFINANCE</a>
+</nav><hr>
+
+<nav class="center">
+<button onclick="algo()" class="button" >ALGOTRADE</button>
+<button onclick="window.location.href ='https://docs.google.com/spreadsheets/d/1B5Cyfw75kwJqN4e4StbhHobc4aP89BJ3-Dk30jPdCWI/edit#gid=0';" class="button" >HISTORICALDATA</button>
+<button onclick="window.location.href ='https://tradingeconomics.com/forecast/commodity';" class="button" >COMMODITYS</button>
+<button onclick="window.location.href ='https://tradingeconomics.com/india/indicators';" class="button" >INDIA MACRO DATA</button>
+<button onclick="charts()" class="button" >TECHANICALCHARTS</button>
+</nav>
+
+<div class="scroll-left">
+    <P style="color: black;">
+        <a href="https://www1.nseindia.com/products/content/equities/equities/bulk.htm" style="color: black;">NSEINDIA</a>|
+        <a href="https://www.bseindia.com/" style="color: black;">BSEINDIA </a>|
+        <a href="https://www.niftyindices.com/">NIFTY INDICES</a>
+        <a href="https://www.ibef.org/" style="color: black;"> INDIAN BRAND EQUATY FOUNDTION</a>|
+        <a href="https://tijorifinance.com/" style="color: black;">TIJORI FINANCE</a>|
+        <a href="https://chartink.com/">CHARTINK</a>|
+        <a href="https://www.sebi.gov.in/index.html" style="color: black;">SEBI</a>|
+        <a href="https://www.niti.gov.in/" style="color: black;">NITI Aayog</a>|
+        <a href="https://www.moneycontrol.com/stocks/marketstats/index.php" style="color: black;">MONEY CONTROL</a>
+    </P>
+</div>
+
+<p>this data is extracted from Google Sheet<a href="https://docs.google.com/spreadsheets/d/1LUm4D5z5Z81Gtu0o40pJYxrG8RxotE_z7e1p8PgWf50/edit?usp=sharing">Source:Kishore Elli</a></p>
+
+<iframe class="iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnz5tDfUH-A0K70OFqzimJ-ykUwgrOfQsD_eMPnFjThnZlHim9iXZ2QC-xdQCHgDnxF3VUV1u8yiTJ/pubhtml" width="98%" height="700" >
+
+</iframe><br><hr>
+
+
+<footer>
+    <h5>Author: KISHORE ELLI</h5>
+    <p>Email:kishoreelli1@gmail.com</p>
+</footer>
+</body>
+</html>

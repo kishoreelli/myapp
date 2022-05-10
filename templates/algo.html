@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algo Trading - Python</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</head>
+
+  <script>
+    function loginToBroker() {
+        window.location.href =  "http://localhost:8080/algo" + "/auth_code"
+    }
+    function positions() {
+        window.location.href = "http://localhost:8080/algo" + "/positions"
+    }
+    function profile() {
+        window.location.href = "http://localhost:8080/algo" + "/profile"
+    }
+    function funds() {
+        window.location.href = "http://localhost:8080/algo" + "/funds"
+    }
+    function holdings() {
+        window.location.href = "http://localhost:8080/algo" + "/holdings"
+    }
+    function market_status() {
+        window.location.href = "http://localhost:8080/algo" + "/market_status"
+    }
+    function orders() {
+        window.location.href = "http://localhost:8080/algo" + "/orders"
+    }
+    function tradebook() {
+        window.location.href = "http://localhost:8080/algo" + "/tradebook"
+    }
+    function minquantity() {
+        window.location.href = "http://localhost:8080/algo" + "/minquantity"
+    }
+    function mkbuy() {
+        window.location.href = "http://localhost:8080/algo" + "/marketbuy"
+    }
+    function mksell() {
+        window.location.href = "http://localhost:8080/algo" + "/marketsell"
+    }
+  </script>
+
+<body class="bg-secondary">
+
+<div class="container">
+    <textarea class="mt-1 form-control form-success" name="w3review" rows="5" >{{ token }}</textarea>
+</div>
+
+<div class="mt-3 text-center">
+    <button class="btn btn-warning btn-lg" onClick="loginToBroker()">Login to Fyers</button>
+    <button class="btn btn-primary btn-lg" onclick="profile()">profile</button>
+    <button class="btn btn-info btn-lg" onclick="positions()">positions</button>
+    <button class="btn btn-primary btn-lg" onclick="holdings()">holdings</button>
+    <button class="btn btn-primary btn-lg" onclick="funds()">funds</button>
+    <button class="btn btn-info btn-lg" onclick="orders()">orders</button>
+    <button class="btn btn-info btn-lg" onclick="tradebook()">tradebook</button>
+    <button class="btn btn-info btn-lg" onclick="market_status()">market_status</button>
+    <button class="btn btn-info btn-lg" onclick="minquantity()">minquantity</button>
+</div>
+
+<div class="container">
+        <button class="btn btn-primary btn-lg" onclick="holdings()">QUTES OF SYMBOL</button>
+</div>
+
+<div class="mt-3 text-center">
+    <button class="btn btn-outline-info btn-lg" onclick="window.location.href = 'http://127.0.0.1:3000/get_market_status';">testbutton</button>
+    <button class="btn btn-outline-info btn-lg" onclick="window.location.href = 'http://127.0.0.1:3000/nse/get_indices';">testbutton</button>
+    <button class="btn btn-outline-info btn-lg" onclick="window.location.href = 'http://127.0.0.1:3000/get_market_status';">testbutton</button>
+    <button class="btn btn-outline-info btn-lg" onclick="window.location.href = 'http://127.0.0.1:3000/get_market_status';">testbutton</button>
+    <button class="btn btn-outline-info btn-lg" onclick="window.location.href = 'http://127.0.0.1:3000/get_market_status';">testbutton</button>
+    <button class="btn btn-outline-info btn-lg" onclick="window.location.href = 'http://127.0.0.1:3000/get_market_status';">testbutton</button>
+    <button class="btn btn-outline-info btn-lg" onclick="window.location.href = 'http://127.0.0.1:3000/get_market_status';">testbutton</button>
+</div>
+
+<div class="mt-3 text-center">
+    <button class="btn btn-danger btn-lg" onClick="mkbuy()">marketbuy</button>
+    <button class="btn btn-danger btn-lg" onclick="mksell()">marketsell</button>
+    <button class="btn btn-outline-danger btn-lg" onclick="#">testbutton</button>
+    <button class="btn btn-outline-danger btn-lg" onclick="#">testbutton</button>
+    <button class="btn btn-outline-danger btn-lg" onclick="#">testbutton</button>
+    <button class="btn btn-outline-danger btn-lg" onclick="#">testbutton</button>
+    <button class="btn btn-outline-danger btn-lg" onclick="#">testbutton</button>
+    <button class="btn btn-outline-danger btn-lg" onclick="#">testbutton</button>
+    <button class="btn btn-outline-danger btn-lg" onclick="#">testbutton</button>
+</div>
+
+</body>
+</html>
